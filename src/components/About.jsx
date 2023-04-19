@@ -67,7 +67,7 @@ const About = () => {
       <h3 className={`${styles.sectionHeadText} text-center mt-10`}>My stack</h3>
       <div className="mt-20 flex flex-wrap gap-10">
         {technologies.map((service, index) => (
-          <ServiceCard key={service.name} index={index} title={service.name} {...service} />
+          <ServiceCard key={service.name} index={index} title={service.name} icon={service.icon} />
         ))}
       </div>
     </div>
