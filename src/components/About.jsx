@@ -11,7 +11,7 @@ import astroabout from "../assets/astroabout.png"
 const ServiceCard = ({  title, icon }) => (
   <Tilt className="w-[250px]">
        <motion.div
-  variants={fadeIn("right", "spring",  0.5, 0.75)}
+  variants={""}
   className="w-full bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-38% to-emerald-500 to-90% p-[1px] rounded-[35%] shadow-lg hover:from-purple-700 hover:via-purple-900 hover:to-indigo-700"
   whileHover={{ scale: 1.05 }}
   whileTap={{ scale: 0.95 }}
@@ -55,7 +55,7 @@ const About = () => {
       </motion.div>
 
       <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
+        variants={""}
         className="mt-4 flex text-secondary text-[17px] max-w-full leading-[30px]"
       >
          Hey there! My name is Aishirin and I'm a software developer with experience in JavaScript and expertise in frameworks
