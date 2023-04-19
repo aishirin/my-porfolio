@@ -8,10 +8,10 @@ import { technologies } from "../constants";
 import SectionWrapper from "../hoc/SectionWrapper";
 import { fadeIn, textVariant } from "../utils/motion";
 import astroabout from "../assets/astroabout.png"
-const ServiceCard = ({ index, title, icon }) => (
+const ServiceCard = ({  title, icon }) => (
   <Tilt className="w-[250px]">
        <motion.div
-  variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+  variants={fadeIn("right", "spring",  0.5, 0.75)}
   className="w-full bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-38% to-emerald-500 to-90% p-[1px] rounded-[35%] shadow-lg hover:from-purple-700 hover:via-purple-900 hover:to-indigo-700"
   whileHover={{ scale: 1.05 }}
   whileTap={{ scale: 0.95 }}
@@ -39,9 +39,9 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <div>
-      <motion.div variants={textVariant()}
+      <motion.div variants={""}
       className="flex">
-        <h2 className={`${styles.sectionHeadText} sm:text-[20px]`}>About me</h2>
+        <h2 className={`${styles.sectionHeadText} `}>About me</h2>
         <motion.img
   src={astroabout}
   alt="planet"
@@ -66,8 +66,8 @@ const About = () => {
       </motion.p>
       <h3 className={`${styles.sectionHeadText} text-center mt-10`}>My stack</h3>
       <div className="mt-20 flex flex-wrap gap-10">
-        {technologies.map((service, index) => (
-          <ServiceCard key={service.name} index={index} title={service.name} icon={service.icon} />
+        {technologies.map((service) => (
+          <ServiceCard key={service.name}  title={service.name} icon={service.icon} />
         ))}
       </div>
     </div>

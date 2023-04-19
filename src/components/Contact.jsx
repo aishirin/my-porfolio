@@ -29,7 +29,7 @@ const Contact = () => {
           </a>
           <a
             href="https://t.me/aishirin"
-            className={`${styles.sectionSubText} sm:text-[10px]`}
+            className={`${styles.sectionSubText} sm:text-[7px]`}
           >
             
             +996779662013
