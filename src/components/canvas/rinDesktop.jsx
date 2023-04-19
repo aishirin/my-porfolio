@@ -12,7 +12,7 @@ const Desk = ({isMobile}) => {
     <hemisphereLight intensity={10.15} groundColor="black" />
 
     {/* <pointLight intensity={5} /> */}
-    <primitive object={desk.scene} scale={isMobile?1:0.8} position-y={isMobile?1.2:-1} rotation-y={0} />
+    <primitive object={desk.scene} scale={isMobile?1:0.8} position-y={isMobile?1:-1} rotation-y={0} />
   </mesh>
     
   );
