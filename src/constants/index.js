@@ -129,7 +129,7 @@ const experiences = [
   },
   {
     title: "Frontend Developer ",
-    company_name: "Light code",
+    company_name: "KRSU",
     icon: jobit,
     iconBg: "#383E56",
     date: "Nov 2021 - Mar 2022",

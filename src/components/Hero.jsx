@@ -47,8 +47,8 @@ const Hero = () => {
         <DeskCanvas/>
         
       
-      <div className="absolute  bottom-40 w-[80%] flex justify-end items-center">
-      <div className='absolute  bottom-40 w-[80%] flex justify-end items-center'>
+      <div className="absolute  bottom-35 w-[80%] flex justify-end items-center">
+      <div className='absolute  bottom-35 w-[80%] flex justify-end items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
